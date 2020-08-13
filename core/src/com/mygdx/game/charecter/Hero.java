@@ -21,7 +21,7 @@ public class Hero extends GameCharacter {
         this.gameScreen = gameScreen;
         this.level = 1;
         this.textureHP = new Texture("bar.png");
-        this.texture = new Texture("NavalniHero.png");
+        this.texture = new Texture("Hero.png");
         this.position = new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 720));
         while(!gameScreen.getMap().isCellPassable(position)) {
             this.position.set((MathUtils.random(0, 1280)), MathUtils.random(0, 720));
@@ -35,7 +35,7 @@ public class Hero extends GameCharacter {
     }
 
     public void renderHUD(SpriteBatch batch, BitmapFont font24) {
-        font24.draw(batch, "Aleksey Navalni\nLevel : "+ level +"\nExp:" + exp + "/"  + expTo[level + 1] +"\nCoins: " + coins, 20,700);
+        font24.draw(batch, "Hero\nLevel : "+ level +"\nExp:" + exp + "/"  + expTo[level + 1] +"\nCoins: " + coins, 20,700);
     }
 
     @Override
