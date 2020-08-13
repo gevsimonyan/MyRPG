@@ -14,7 +14,7 @@ public class Monster extends GameCharacter {
     private float activityRadius;
 
     public Monster(GameScreen gameScreen) {
-        this.texture = new Texture("MonsterPutin.png");
+        this.texture = new Texture("Monster.png");
         this.textureHP = new Texture("bar.png");
         this.position = new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 720));
         while(!gameScreen.getMap().isCellPassable(position)) {
